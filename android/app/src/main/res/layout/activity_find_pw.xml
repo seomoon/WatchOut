@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.ise.watchout.login.FindPwActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="133dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_white"
+        android:layout_weight="0.35" />
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pw_find_phone" />
+
+        <EditText
+            android:id="@+id/changepw_phone"
+            android:layout_width="158dp"
+            android:hint=" - 를 입력해주세요 "
+            android:textColorHint="#ffffff"
+            android:layout_height="25dp"
+            android:background="@drawable/changepw_new_bg"
+            android:textColor="#ffffff"
+            android:layout_weight="0.96" />
+
+        <ImageView
+            android:id="@+id/changepw_phoneCheck"
+            android:layout_width="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pw_find_phone_ok" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/changepw_new" />
+
+        <EditText
+            android:id="@+id/changepw_new"
+            android:layout_width="158dp"
+            android:layout_height="25dp"
+            android:background="@drawable/changepw_new_bg"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/changepw_new_check" />
+
+        <EditText
+            android:id="@+id/changepw_newCheck"
+            android:layout_width="158dp"
+            android:layout_height="25dp"
+            android:background="@drawable/changepw_new_bg"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/changepw_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pw_find_ok" />
+
+</LinearLayout>

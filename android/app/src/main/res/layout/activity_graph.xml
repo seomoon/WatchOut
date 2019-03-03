@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:orientation="vertical"
+    tools:context="com.example.ise.watchout.Main.MainActivity">
+
+    <!--  상단바  -->
+    <RelativeLayout
+        android:id="@+id/rl_toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/navy">
+
+        <!--  아이콘  -->
+        <ImageView
+            android:id="@+id/graphImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/graph_icon" />
+
+        <!--   통계 글씨  -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/graphImg"
+            android:layout_toRightOf="@+id/graphImg"
+            android:src="@drawable/graph" />
+    </RelativeLayout>
+
+    <!-- 상단바 아래의 밑줄  -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/changepw_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/backbtn"-->
+        <!--android:layout_width="48dp"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:src="@drawable/graph_back" />-->
+
+
+</LinearLayout>

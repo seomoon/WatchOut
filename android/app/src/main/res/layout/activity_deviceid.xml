@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navy">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="76dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="36dp"
+            android:src="@drawable/join_phonenum"
+            android:layout_weight="0.20" />
+
+
+        <EditText
+            android:id="@+id/joinDevice"
+            android:layout_width="180dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.05"
+            android:background="@drawable/join_id_bg"
+            android:ems="8"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="51dp"
+            android:id="@+id/devicecheck"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="인증"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="0.06" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/deviceok"
+        android:layout_width="76dp"
+        android:layout_height="16dp"
+        android:src="@drawable/pw_find_ok" />
+
+
+</LinearLayout>

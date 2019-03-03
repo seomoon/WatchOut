@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navy">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pw_find_phone" />
+
+        <EditText
+            android:id="@+id/editphone"
+            android:layout_width="147dp"
+            android:hint=" - 를 입력해주세요"
+            android:textColorHint="#ffffff"
+            android:layout_height="match_parent"
+            android:background="@drawable/join_id_bg"
+            android:ems="8"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/pw_find_ok"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:src="@drawable/pw_find_phone_ok" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ok"
+        android:layout_width="61dp"
+        android:layout_height="16dp"
+        android:src="@drawable/pw_find_ok" />
+
+
+</LinearLayout>

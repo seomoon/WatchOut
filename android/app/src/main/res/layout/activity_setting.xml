@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:orientation="vertical"
+    tools:context="com.example.ise.watchout.setting.Setting">
+
+    <!--  상단바  -->
+    <RelativeLayout
+        android:id="@+id/rl_toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/navy">
+
+        <!--  아이콘  -->
+        <ImageView
+            android:id="@+id/settingImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/setting_icon" />
+
+        <!--   설정 글씨  -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/settingImg"
+            android:layout_toRightOf="@+id/settingImg"
+            android:src="@drawable/setting" />
+
+
+        <!--  전원 on/off 기능 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/powerView"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/onbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:src="@drawable/setting_onoff"
+                android:layout_alignBottom="@+id/childPower"
+                android:layout_alignLeft="@+id/childPower"
+                android:layout_alignStart="@+id/childPower" />
+
+            <Switch
+                android:id="@+id/childPower"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:showText="true"
+                android:switchMinWidth="80dp"
+                android:switchTextAppearance="@style/switch_style"
+                android:textOff="OFF"
+                android:textOn="ON" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!-- 상단바 아래의 밑줄  -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/setting_bg" />
+
+    <!--  알림 on/off 버튼 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/alarmbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/setting_alarm" />
+
+        <Switch
+            android:id="@+id/childAlarm"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:showText="true"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:switchMinWidth="80dp"
+            android:switchTextAppearance="@style/switch_style"
+            />
+    </RelativeLayout>
+
+
+    <!--  비밀번호 변경  -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/changepwbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/manage_changepw_icon" />
+
+        <ImageView
+            android:id="@+id/childChangePw"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_changepw" />
+    </RelativeLayout>
+
+    <!--  로그아웃  -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logoutbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logout_icon" />
+
+        <ImageView
+            android:id="@+id/childLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logout" />
+    </RelativeLayout>
+
+    <!--  회원탈퇴  -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/useroutbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/setting_out_icon" />
+
+        <ImageView
+            android:id="@+id/userOut"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_out" />
+    </RelativeLayout>
+
+
+</LinearLayout>

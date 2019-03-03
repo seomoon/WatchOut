@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navy"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xml_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:id="@+id/value"
+            android:text="값"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D5D5D5"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="1dp"
+            android:background="#D5D5D5"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:layout_margin="10dp"
+            android:textColor="#D5D5D5"
+            android:id="@+id/date"
+            android:textSize="15dp"
+            android:text="date"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
